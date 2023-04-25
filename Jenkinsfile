@@ -12,7 +12,7 @@ pipeline {
                 sh '''
                 uname -a
                 curl -LJO https://github.com/astronomer/astro-cli/releases/download/v1.14.1/astro_1.14.1_linux_arm64.tar.gz
-                tar -zxvf astro_1.14.1_linux_arm64.tar.gz astro && rm astro_1.14.1_linux_arm64.tar.gz
+                tar -zxvf astro_1.14.1_linux_arm64.tar.gz astro && rm astro_1.14.1_linux_arm64.tar.gz && chmod +x astro
                 ./astro deploy
                 '''
             }
