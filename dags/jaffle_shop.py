@@ -4,6 +4,7 @@ from cosmos.providers.dbt.dag import DbtDag
 from airflow.datasets import Dataset
 from datetime import datetime
 
+#Very basic dbt DAG
 jaffle_shop = DbtDag(
 		dag_id="jaffle_shop",
     dbt_project_name="jaffle_shop",
