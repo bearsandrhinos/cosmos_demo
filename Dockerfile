@@ -1,5 +1,4 @@
-FROM quay.io/astronomer/astro-runtime:11.3.0
-
+FROM quay.io/astronomer/astro-runtime:11.4.0
 
 # install dbt into a venv to avoid package dependency conflicts
 WORKDIR "/usr/local/airflow"
